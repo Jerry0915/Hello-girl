@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<head></head>
+<body>
+
+
+<div id="test">
+  <p id="p1">I like sing</p>
+  <p id="p2">same as above</p>
+</div>
+
+<script>
+//创建新的 HTML 元素
+//如需向 HTML DOM 添加新元素，您必须首先创建该元素（元素节点），然后向一个已存在的元素追加该元素。
+//shit  头有点疼。。
+var newElement =document.createElement("p");
+var child = document.createTextNode("I like basketbool too");
+newElement.appendChild(child);
+
+var newp =document.getElementById("test");
+newp.appendChild(newElement);
+
+</script>
+
+</body>
+</html>
